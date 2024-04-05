@@ -19,4 +19,3 @@ git clone https://github.com/username/projectname.git
 cd projectname
 pip install -r requirements.txt
 test
-zboub
