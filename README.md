@@ -1,5 +1,10 @@
 # Prediction of night-time rental prices for apartments and houses
 
+
+## Our data
+https://drive.google.com/file/d/1DDW71ZVrk8QzHe5lSOmuPgR6bumRmiCd/view?usp=drive_link
+
+
 ## Project background
 
 In the dynamic short-term property rental sector, determining the optimal price per night is crucial to maximizing revenues while remaining competitive. This project aims to develop a predictive model capable of estimating the price per night for apartments and houses using a dataset extracted from accommodation platforms such as Airbnb. With over 400 parameters, including location, home features, amenities offered, and times of year, our model seeks to offer accurate predictions that will help hosts set their rates in an informed manner.
