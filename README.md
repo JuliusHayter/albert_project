@@ -25,4 +25,5 @@ We hope this tool will help optimize pricing strategies and increase guest and t
 Follow these steps to fork our repository 
 
 git clone https://github.com/JuliusHayter/albert_project
+
 pip install -r requirements.txt
