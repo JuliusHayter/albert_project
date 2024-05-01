@@ -39,7 +39,7 @@ for i in range(3):st.write("")
 arrondissement = st.number_input("Paris arrondissement in which your apartment is located ",1,20)
 for i in range(3):st.write("")
 
-test = np.concatenate((np.array([1, 2, 3, 4, 5, 6]), np.zeros(350)))
+
 with open('/Users/julius/Desktop/école/python/ML/ML_POC/albert_project/notebooks/model.pkl', 'rb') as f:
     model = pickle.load(f)
 
@@ -50,7 +50,7 @@ if st.button("Get your estimation"):
     st.write("Our price estimation for your appartment is",int(model.predict(np.array([size, capacity, nb_of_bedrooms, nb_of_beds, nb_of_bathrooms, arrondissement]).reshape(1,-1))),"€ per night ! ")
     #st.success("Data loaded successfully!")
     st.balloons()
-    st.camera_input("")
+    #st.camera_input("")
 
     st.image("https://www.cravate-avenue.com/modules/prestablog/views/img/grid-for-1-7/up-img/thumb_365.jpg?5a67ff59f28244882f504b0e4456010a", width=300,clamp=True)
 
@@ -66,37 +66,3 @@ st.download_button(
 
 
 
-
-
-
-
-
-
-
-
-# # Generating a fake dataset
-# np.random.seed(42)  # For reproducible results
-# x = np.arange(10)  # X values
-# y = np.random.rand(10) * 100  # Y values, randomly generated
-
-# # Creating a plot
-# st.subheader("Fake Data Visualization")
-# fig, ax = plt.subplots()
-# ax.bar(x, y, color='b', label="Fake Data")
-# ax.set_xlabel("X Axis")
-# ax.set_ylabel("Y Axis")
-# ax.set_title("Simple Plot of Fake Data")
-# ax.legend()
-
-# # Display the plot in Streamlit
-# st.pyplot(fig)
-
-# # Display a dataframe in Streamlit
-# st.subheader("Quotes Data")
-
-# #url to paste : https://quotes.toscrape.com/
-# base_url = st.text_input("Enter the URL to scrape:")
-# if base_url:
-#     quotes_data = fetch_quotes(base_url)
-#     st.write(pd.DataFrame(quotes_data))
-#     st.success("Data loaded successfully!")
