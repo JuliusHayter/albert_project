@@ -57,11 +57,33 @@ if st.button("Get your estimation"):
 
 for i in range(3):st.write("")
 
-st.download_button(
+
+st.subheader("If you want to download the model and try it yourself")
+for i in range(1):st.write("")
+st.write("We offer you free access to our model, so feel free to download it and try it out for yourself.")
+st.write('Note that you will have to use 1.3.0 version of scikit-learn to use this')
+for i in range(3):st.write("")
+if st.download_button(
     label="Download the pkl file to get our ML model",
     data="/Users/julius/Desktop/école/python/ML/ML_POC/albert_project/notebooks/model.pkl",
     file_name='model.pkl',
-)
+): 
+    for i in range(1):st.write("")
+    st.success("Data downloaded successfully!")
+
+for i in range(3):st.write("")
+
+st.subheader("If you want to go further")
+for i in range(2):st.write("")
+st.write('Our complete model, including all features, is available for a more accurate estimate.')
+for i in range(2):st.write("")
+if st.download_button(
+    label="Download the pkl file to get our complete ML model",
+    data="/Users/julius/Desktop/école/python/ML/ML_POC/albert_project/notebooks/best_model.pkl",
+    file_name='complete_model.pkl',
+): 
+    for i in range(1):st.write("")
+    st.success("Data downloaded successfully!")
 
 
 
